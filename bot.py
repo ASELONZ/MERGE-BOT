@@ -435,7 +435,7 @@ async def media_extracter(c: Client, m: Message):
             mid=rmess.id
             file_name = media.file_name
             if file_name is None:
-                await m.reply("File name not found; goto @yashoswalyo")
+                await m.reply("File name not found; goto @ANKIT3690")
                 return
             markup = bMaker.makebuttons(
                 set1=["Audio", "Subtitle", "Cancel"],
@@ -597,7 +597,7 @@ Your account can be released only by @{Config.OWNER_USERNAME}."""
             try:
                 abuser_id = int(m.text.split(" ")[1])
                 if abuser_id == int(Config.OWNER):
-                    await m.reply_text("I can't ban you master,\nPlease don't abandon me. ",quote=True)
+                    await m.reply_text("I can't ban you master,\n Don't abandon me. ",quote=True)
                 else:
                     try:
                         user_obj: User = await c.get_users(abuser_id)
@@ -740,7 +740,7 @@ if __name__ == "__main__":
         with userBot:
             userBot.send_message(
                 chat_id=int(LOGCHANNEL),
-                text="Bot booted with Premium Account,\n\n  Thanks for using <a href='https://github.com/yashoswalyo/merge-bot'>this repo</a>",
+                text="Bot booted with Premium Account,\n\n  Thanks for using <a href='https://t.me/thewarriorsreal'>Group</a>",
                 disable_web_page_preview=True,
             )
             user = userBot.get_me()
